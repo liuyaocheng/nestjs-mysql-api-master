@@ -39,10 +39,10 @@ module.exports = {
   deploy: {
     production: {
       user: 'root',
-      host: '39.108.99.86',
-      ref: 'origin/master',
-      repo: 'git@github.com:repo.git',
-      path: '/var/www/AnJiaMallServer',
+      host: '8.142.66.150',
+      ref: 'origin/amin',
+      repo: 'https://github.com/liuyaocheng/nestjs-mysql-api-master.git',
+      path: '/www/wwwroot/nestjs-mysql-api-master',
       'post-deploy':
         'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
     },
